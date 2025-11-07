@@ -24,3 +24,12 @@ else:
     print("Hi ha hagut un 10")
 
 #3
+for i in range(10):
+    msg = f"introdueix el nombre { i + 1 } de 10: "
+    num = float(input(msg))
+    if num < 0:
+        hi_ha_negatiu = True
+if hi_ha_negatiu:
+    print("Hi havia algun nombre negatiu.")
+else:
+    print("No hi havia cap nombre negatiu.")
