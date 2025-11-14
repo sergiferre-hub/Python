@@ -1,3 +1,6 @@
+from time import sleep
+
+
 def calcular_area_quadrat ():
 #1
     from time import sleep
@@ -6,7 +9,6 @@ def calcular_area_quadrat ():
 
     print ("L'area del quadrat es :", int (y) * int (y))
 
-    sleep (1)
 
 def operacions_basiques ():
 #2
@@ -20,7 +22,6 @@ def operacions_basiques ():
     print ("La multiplicacio es :", x * y)
     print ("La divisio es :", x / y)
 
-    sleep (1)
 
 def fer_frase ():
 #3
@@ -31,7 +32,6 @@ def fer_frase ():
     c = input ()
     print ("La frase es:", a, b, c)
 
-    sleep (1)
 
 def operacions_basiques_amb_coma ():
 #4
@@ -42,7 +42,6 @@ def operacions_basiques_amb_coma ():
     print ("La suma es:", int (x + y))
     print ("La resta es:", int (x - y))
 
-    sleep (1)
 
 def comparar_anys ():
 #5
@@ -54,7 +53,6 @@ def comparar_anys ():
     else:
         print ("Ets adult.")
 
-    sleep (1)
 
 def numero_mes_gran ():
 #6
@@ -69,14 +67,11 @@ def numero_mes_gran ():
         print ("El numero mes gran es:", num2)
     else:
         print ("El numero mes gran es:", num3)
-    
-    sleep (1)
 
 
 
 def numero_positiu_o_negatiu ():
 #7
-    from time import sleep
     x = int (input ("Posa un numero: "))
 
     if x < 0:
@@ -89,11 +84,9 @@ def numero_positiu_o_negatiu ():
     for i in range (2, 201, 2):
         print (i)
 
-    sleep (1)
 
 def comprovar_nota_10 ():
 #8
-    from time import sleep
     El_Deu = False
     nota = int (input ("Introdueix una nota entre l'1 i el 10 o -1 per acabar: "))
 
@@ -109,11 +102,9 @@ def comprovar_nota_10 ():
     else:
         print ("Hi ha hagut un 10")
 
-    sleep (1)
 
 def comprovar_nombres_negatius ():
 #9
-    from time import sleep
     for i in range (10):
         msg = f"introdueix el nombre { i + 1 } de 10: "
         num = float (input(msg))
@@ -123,8 +114,7 @@ def comprovar_nombres_negatius ():
         print ("Hi havia algun nombre negatiu.")
     else:
         print ("No hi havia cap nombre negatiu.")
-    
-    sleep (1)
+
 
 while True:
     print ("1. Calcular Àrea del Quadrat")
@@ -165,3 +155,5 @@ while True:
             
         case _:
             print ("ERROR: Opció no vàlida. Si us plau, tria un número de l'1 al 9 o 's' per sortir.")
+            
+    sleep (1)
